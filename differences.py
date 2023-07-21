@@ -1,4 +1,4 @@
-""" from PIL import Image
+from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -45,8 +45,8 @@ image2_path = "C://aditi/competitions/hackrxGit/bajajss2.jfif"
 output_diff_path = 'C://aditi/competitions/hackrxGit/diff1.jfif'
 
 image_diff(image1_path, image2_path, output_diff_path)
- """
 
+""" 
 import cv2 as cv
 import numpy as np
 from PIL import Image, ImageChops
@@ -108,4 +108,4 @@ thickness = 2
 Finished = cv.circle(img1s, c3, radius, color, thickness)
 
 #Saves the Final Image with the circle around it
-cv.imwrite("Final.jpg", Finished)
+cv.imwrite("Final.jpg", Finished) """
