@@ -84,11 +84,15 @@ diff = cv.subtract(img1, img2)  # other order `(img2, img1)` gives worse result
 
 # saves difference
 cv.imwrite("difference.png", diff)
-
+""" 
 # show difference - press any key to close
 cv.imshow('diff', diff)
-cv.waitKey(0)
+cv.waitKey(0) """
 #cv.destroyWindow('diff')
+plt.imshow(diff)
+plt.axis('off')  # Remove axes ticks and labels
+plt.show()
+
 
 if not np.any(diff):
     print("The images are the same!")
