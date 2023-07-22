@@ -90,19 +90,19 @@ def option1_code():
                 rating = rating + 1
 
             totalUniqueColors = find_number_of_colors(uploaded_file) 
-            y_out4="ADEQUATE NUMBER OF COLORS USED IN WEBSITE DESIGN"
+            y_out4="Less than or Equal to 6 colors detected"
             if totalUniqueColors>6:
-                y_out4="TOO MANY COLORS USED IN WEBSITE DESIGN"
+                y_out4="More than 6 colors detected"
 
             y_out5 = rate_text_amount(uploaded_file)
 
             #st.title(f' PREDICTED OUTPUT: {y_out1}')
             st.title(f' PREDICTED OUTPUT: {y_out2}')
-            st.title(f' PREDICTED OUTPUT: {y_out3}')
+            #st.title(f' PREDICTED OUTPUT: {y_out3}')
             st.title(f' PREDICTED OUTPUT: {y_out4}')
             st.title(f' PREDICTED OUTPUT: {y_out5}')
-            st.title(f' PREDICTED OUTPUT: {y_out6}')
-            st.title(f' PREDICTED RATING: {rating}/3')
+            #st.title(f' PREDICTED OUTPUT: {y_out6}')
+            #st.title(f' PREDICTED RATING: {rating}/3')
 
             # q = saved_model.predict_proba(y)
             # for index, item in enumerate(Categories):
